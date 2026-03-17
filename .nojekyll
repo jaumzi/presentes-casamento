@@ -1,0 +1,5 @@
+# Jekyll Configuration for GitHub Pages
+# Disables Jekyll processing for faster deployment
+
+# Use this file to avoid Jekyll processing your site
+# and to simplify deployment on GitHub Pages

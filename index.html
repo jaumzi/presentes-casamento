@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lista de Presentes de Casamento - Monalisa e João Vitor - 20/03/2026"
+    />
+    <meta name="theme-color" content="#0066cc" />
+    <title>Presentes de Casamento - Monalisa e João Vitor</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="mosaico">
+      <div class="mosaico-item" style="background-image: url('images/casal/1.jpeg');"></div>
+      <div class="mosaico-item mosaico-large" style="background-image: url('images/casal/2.jpeg');"></div>
+      <div class="mosaico-item" style="background-image: url('images/casal/3.jpeg');"></div>
+      <div class="mosaico-item" style="background-image: url('images/casal/4.jpeg');"></div>
+      <div class="mosaico-item mosaico-large" style="background-image: url('images/casal/5.jpeg');"></div>
+      <div class="mosaico-item" style="background-image: url('images/casal/6.jpeg');"></div>
+      <div class="mosaico-item" style="background-image: url('images/casal/7.jpeg');"></div>
+      <div class="mosaico-item" style="background-image: url('images/casal/8.jpeg');"></div>
+      <div class="mosaico-item mosaico-large" style="background-image: url('images/casal/9.jpeg');"></div>
+      <div class="mosaico-item" style="background-image: url('images/casal/10.jpeg');"></div>
+      <div class="mosaico-item" style="background-image: url('images/casal/11.jpeg');"></div>
+      <div class="mosaico-item" style="background-image: url('images/casal/12.jpeg');"></div>
+      <div class="mosaico-item" style="background-image: url('images/casal/13.jpeg');"></div>
+      <div class="mosaico-item mosaico-large" style="background-image: url('images/casal/14.jpeg');"></div>
+      <div class="mosaico-item" style="background-image: url('images/casal/15.jpeg');"></div>
+      <div class="mosaico-item" style="background-image: url('images/casal/16.jpeg');"></div>
+      <div class="mosaico-item" style="background-image: url('images/casal/17.jpeg');"></div>
+      <div class="mosaico-item" style="background-image: url('images/casal/18.jpeg');"></div>
+      <div class="mosaico-item" style="background-image: url('images/casal/19.jpeg');"></div>
+      <div class="mosaico-item mosaico-large" style="background-image: url('images/casal/20.jpeg');"></div>
+      <div class="mosaico-item" style="background-image: url('images/casal/21.jpeg');"></div>
+    </div>
+    <div class="container" >
+      <header>
+        <h1>Presentes de Casamento</h1>
+        <h2>Monalisa e João Vitor</h2>
+        <p>Casamento dia 20/03/2026</p>
+      </header>
+
+      <section class="qr-section">
+        <h3>Escaneie o QR Code para Pagamento</h3>
+        <img
+          id="qr-code"
+          src="images/qr-code.png"
+          alt="QR Code para Pagamento"
+        />
+      </section>
+
+      <section class="gifts-section">
+        <h3>Lista de Presentes</h3>
+        <div id="gifts-list"></div>
+      </section>
+    </div>
+    <div id="payment-modal" class="modal" style="display: none">
+      <div class="modal-content">
+        <div class="modal-form" id="modal-form">
+          <span class="close">&times;</span>
+          <h3>Pagamento para: <span id="selected-gift"></span></h3>
+          <p>Valor: R$ <span id="selected-value"></span></p>
+          <img id="modal-qr" src="images/qr-code.png" alt="QR Code" />
+          <div class="buttons">
+            <button id="confirm-payment">Pagamento Realizado</button>
+            <button id="cancel-payment">Cancelar</button>
+          </div>
+        </div>
+        <div class="modal-success" id="modal-success" style="display: none;">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <div class="success-content">
+            <img src="images/casal/25.jpeg" alt="Sucesso" class="success-image" />
+            <h2>🎉 Presente Confirmado! 🎉</h2>
+            <p>Muito obrigado!</p>
+            <button id="close-success">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "presentes-casamento",
+  "version": "1.0.0",
+  "description": "Site responsivo de lista de presentes de casamento - Monalisa e João Vitor",
+  "main": "index.html",
+  "scripts": {
+    "preview": "start index.html"
+  },
+  "keywords": [
+    "casamento",
+    "presentes",
+    "lista",
+    "wedding",
+    "gifts"
+  ],
+  "author": "João Vitor & Monalisa",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seu-usuario/presentes-casamento.git"
+  }
+}
